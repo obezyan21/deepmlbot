@@ -21,7 +21,7 @@ token = os.getenv("token")
 bot = Bot(token=token)
 dp = Dispatcher()
 
-model = YOLO("D:/bots/deepmlbot/model/weights/best.pt")
+model = YOLO("D:/bots/deepmlbot/model2/weights/best.pt")
 
 @dp.message(Command("start"))
 async def start_cmd(message: types.Message):
