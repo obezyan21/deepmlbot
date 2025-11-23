@@ -1,16 +1,12 @@
 import os
 import asyncio
 import logging
-import json
 from PIL import Image
 import io
 from ultralytics import YOLO
 from aiogram import Bot, Dispatcher, types, F, types
-from aiogram.enums import ParseMode
 from aiogram.types import BufferedInputFile
 from aiogram.filters.command import Command
-from aiogram.utils.formatting import Text, Bold
-from aiogram.utils.keyboard import InlineKeyboardBuilder
 from dotenv import load_dotenv
 
 load_dotenv()
